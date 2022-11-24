@@ -6,10 +6,9 @@ loss = list(map(int, input().split()))#근손실 정도
 
 #PT를 한 번 받을 때의 근손실 정도가 M
 
-'''
 
-up =loss.sort()
-down = loss.sor(reverse=True)
+up =sorted(loss)
+down =sorted(loss ,reverse=True)
 tot_loss=0
 one_loss=0
 
@@ -38,3 +37,4 @@ else:
         
 print(m)
 
+'''

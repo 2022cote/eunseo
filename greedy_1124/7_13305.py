@@ -12,10 +12,7 @@ tot =0
 
 for i in range(n-1):# 5 2 4
     if i ==0:  c=cost[i]
-    
-    if c > cost[i]: c = cost[i]
-        
-        
+    if c > cost[i]: c = cost[i]    
     tot += c * li[i]
 
 print(tot)
