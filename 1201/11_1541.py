@@ -20,6 +20,6 @@
 num = input().split('-') #최솟값을 구해야하는데 괄호가 없으므로 -로 쪼개야함.  +의 경우 괄호 사용시 55-50+40  --> 55-(50+40)같이 수를 줄일 수 있음
 tot = sum(map(int, num[0].split('+'))) #50으로 들어가면 tot =50 55+50 처럼 들어가면  tot=105
 del num[0]
-tot for i in num: 
+for i in num: 
     tot -= sum(map(int, i.split('+'))) #괄호 넣어줘서 +있으면 다 더함
 print(tot)
