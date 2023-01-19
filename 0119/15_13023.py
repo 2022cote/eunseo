@@ -1,7 +1,3 @@
-''' https://www.acmicpc.net/problem/13023	ABCDE
-
-'''
-
 n, m = map(int, input().split())
 
 grap = [[] for _ in range(n)]
@@ -31,12 +27,6 @@ def dfs(s, num):
 for i in range(n):
     friend[i] = True
     dfs(i, 0)
-    if result:
-        break
+    if result:  break
 
-
-if result:
-    print(1)
-
-else:
-    print(0)
+print(1 if result else 0)
